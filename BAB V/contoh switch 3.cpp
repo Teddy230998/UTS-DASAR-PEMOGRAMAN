@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int kode;
+
+    cout << "1 = SENIN 2 = Selasa 3 = Rabu 4 = kamis" << endl;
+    cout << "5 = Jumat 6 = Sabtu  7 = Minggu" << endl;
+    cin >> kode;
+
+    switch (kode) {
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+            cout << "Hasil kerja" << endl;
+            break;
+        case 6:
+        case 7:
+            cout << "Hari libur" << endl;
+            break;
+        default:
+            cout << "Kode hari libur valid" << endl;
+        }
+
+        return 0;
+}
